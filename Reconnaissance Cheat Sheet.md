@@ -1,0 +1,25 @@
+## Subdomain
+- **Assetfinder:** `echo "domain.tld" | assetfinder --subs-only | anew subdomains.txt`
+- **Subfinder (Update API keys):** `subfinder -silent -recursive -all -d domain.com | anew subdomains.txt`
+- **Amass  (Update API keys):**`amass enum -brute -d domain.com -v`
+- `dnscan.py`
+- **Knockpy**: `python3 /opt/knock/knockpy.py domain.com --no-local --no-scan | anew subdomains.txt`
+- **HTTPX:** `httpx -title -wc -sc -cl -ct -web-server -asn -p 8000,8080,8443,8834,443,80,8008,3000,5000,9090,900,7070,9200,15672,9000 -threads 75 -location > live.txt`
+- `cat alldomains.txt | httprobe -c 80 --prefer-https | anew web.txt` to save that the ones listening 80 or 443, meaning they have HTTP ports open 
+- **Shodan**
+- **Censys**
+- **Hakrevdns**
+- **Google and GitHub dorks**
+- **Spiderfoot (Passive Recon - Update API Keys)**
+- **Cloudbrute**
+- https://aadinternals.com/osint/
+- `findomain`
+- `sublist3r`
+- `pdtm` (project discovery)
+- `Asset Notes` for wordlists. Especially commonspeak wordlist.
+- `ffuf` for VHOST brute forcing
+- `Security Trails`
+- `ksubdomain`
+- `bgp.he.net` for finding IP's
+- Language specific wordists for  targets.
+- Search `ASN` numbers on ipinfo.io. For Shodan: `asn: AS...` E.g: `asn: AS... port:8443` or `asn:AS... intitle:admin` 
