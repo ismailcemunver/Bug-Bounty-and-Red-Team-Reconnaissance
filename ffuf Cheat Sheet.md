@@ -18,7 +18,7 @@ ffuf -w /opt/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt:FUZZ -u
 #### Recursive Fuzzing
 
 ```shell-session
-ffuf -w /opt/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt:FUZZ -u http://domain:tld/FUZZ -recursion -recursion-depth 1 -e .aspx -v -ic -r -c -mc 200-299,301,302,307,401,403,405,500-599
+ffuf -w /opt/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt:FUZZ -u http://domain.tld/FUZZ -recursion -recursion-depth 1 -e .aspx -v -ic -r -c -mc 200-299,301,302,307,401,403,405,500-599
 ```
 #### Extension Fuzzing
 ```shell-session
